@@ -266,7 +266,7 @@ section h4{
 /*------------------CONOCENOS------------------------*/
 
 .bg{
-    background-image:url(../img/conocenos.jpg);
+    background-image:url(../img/cuenta.jpg);
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
@@ -280,6 +280,9 @@ section h4{
     display: flex;
     bottom: 10%;
     padding: 0px 60px;
+}
+.txt p span{
+    font-family: 'UnifrakturMaguntia', cursive;
 }
 .conocenos img{
     width: 400px;
@@ -312,6 +315,7 @@ section h4{
 .direccion h3{
     color: white;
     padding: 20px 0px;
+    font-size: 20px;
 }
 .consulta{
     display: flex;
@@ -324,11 +328,12 @@ section h4{
     width: 400px;
 }
 .consulta form p{
-    padding: 0px 0px 20px;
+    padding: 0px 0px 8px;
 }
 .consulta input[type="text"]{
     padding: 8px 0px;
     width: 100%;
+    border: solid #54E0C2 2px;
 }
 .consulta input[type="submit"]{
     background-color: white;
@@ -337,6 +342,14 @@ section h4{
     font-size: 15px;
     padding: 8px 5px;
     width: 100%;
+    transition-duration: 0.5s;
+}
+.consulta input[type="submit"]:hover{
+    background-color: #54E0C2;
+    color: white;
+}
+.consulta form p textarea{
+    border: solid #54E0C2 2px;
 }
 .con{
     display: flex;
@@ -367,6 +380,9 @@ section h4{
 }
 .social img{
     filter: invert(100%);
+    padding: 10px;
+    width: 84px;
+    height: 84px;
 }
 .social a{
     padding: 0px 20px;
@@ -543,6 +559,24 @@ footer{
         background-color: black;
         position:sticky;
     }
+    .contact{
+        grid-template-columns: 1fr;
+        padding: 50px 0px;
+        grid-template-rows: 500px 600px 200px 250px;
+    }
+    .con{
+        padding: 30px;
+        align-items: center;
+    }
+    .con img{
+        width: 64px;
+        height: 64px;
+    }
+    .social img{
+        height: 64px;
+        width: 64px;
+    }
+
 }
 @media screen and (max-width:768px){
     .newsletter input[type="text"]{
@@ -617,4 +651,35 @@ footer{
     .categoriasDos a{
         font-size: 15px;
     }
+    .direccion iframe{
+        height: 80%;
+        width: 80%;    
+    }
+    .contact h2{
+        font-size: 35px;
+    }
+    .direccion h3{
+        font-size: 15px;
+    }
+    .consulta form{
+        width: 300px;
+    }
+    .consulta form p textarea{
+        width: 300px;
+    }
+    .con h3{
+        font-size: 20px;
+    }
+    .con img{
+        width: 48px;
+        height: 48px;
+    }
+    .social img{
+        width: 48px;
+        height: 48px;
+    }
+    .social h3{
+        font-size: 20px;
+    }
+
 }

@@ -38,9 +38,6 @@ header nav ul{
 header nav ul li{
     display: inline-block;
 }
-header nav ul li:hover{
-    color: #8E4FD5;
-}
 header nav ul li a{
     padding: 15px;
     font-size: 15px;
@@ -60,22 +57,11 @@ header nav ul li a img:hover{
 }
 .navbar-light .navbar-toggler-icon{
     filter: invert(100%);
+    background-image: url(../img/menu.png);
 }
 /*---------------------MAIN--------------------------*/
 
-.hero div div a{
-    text-decoration: none;
-    color: white;
-    background-color: #8E4FD5;
-    padding: 8px 18px 8px 18px;
-    border-radius: 5px;
-    position: absolute;
-    bottom: 200px;
-    left: 280px;
-}
-main{
-    background-color: black;
-}
+
 section h2{
     color: white;
     text-align: center;
@@ -118,7 +104,7 @@ section h4{
     text-decoration: none;
     color: white;
     background-color: #8E4FD5;
-    padding: 8px 15px 8px 15px;
+    padding: 8px 15px;
     border-radius: 5px;
     transition: 1s ease;
 }
@@ -256,7 +242,7 @@ section h4{
     text-decoration: none;
     color: white;
     background-color: #8E4FD5;
-    padding: 8px;
+    padding: 8px 15px;
     border-radius: 5px;
     transition: 1s ease;
     grid-column-start: 3;

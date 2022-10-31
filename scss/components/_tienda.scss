@@ -1,0 +1,120 @@
+
+/*----GRILLA TIENDA----*/
+
+.divTienda{
+    display: grid;
+    grid-template-columns: 150px 1fr 1fr 1fr;
+    grid-template-areas:
+        "tienda tienda tienda tienda"
+        "categoriasDos producto1 producto2 producto3"
+        "categoriasDos producto4 producto5 producto6"
+        "categoriasDos producto7 producto8 producto9";
+}
+.producto1 {
+    grid-area: producto1; }
+.producto2 {
+    grid-area: producto2; }
+.producto3 {
+    grid-area: producto3; }
+.producto4 {
+    grid-area: producto4; }
+.producto5 {
+    grid-area: producto5; }         
+.producto6 {
+    grid-area: producto6; } 
+.producto7 {
+    grid-area: producto7; }
+.producto8 {
+    grid-area: producto8; }
+.producto9 {
+    grid-area: producto9; }
+.categoriasDos{
+    grid-area: categoriasDos;
+    text-align: start;}
+.titulo{
+    grid-area: tienda;
+    grid-column-start: 2;
+}
+
+/*----TIENDA----*/
+
+.tiendaDos{
+    padding: 150px 20px;
+    .divTienda{
+        text-align: center;
+        padding: 50px 0px;
+        .titulo{
+            display: flex;
+            div{
+                h2{
+                    text-align:start;
+                    color:#8E4FD5;
+                }
+                h3{
+                    color: white;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        transition: 1s ease;
+                        &a:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+        .categoriasDos{
+            h4{
+                color: #8E4FD5;
+            }
+            div{
+                a{
+                    text-decoration: none;
+                    color: white;
+                    display: block;
+                    padding: 7px 0px;
+                    transition: 1s ease;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .producto{
+            img{
+                width: 280px;
+                height: 280px;
+            }
+            a{
+                text-decoration: none;
+                h3{
+                    text-align: center;
+                    color: #8E4FD5;
+                    transition: 1s ease;
+                    font-size: 25px;
+                    &:hover{
+                        color: #54E0C2;
+                    }
+                }
+            }
+            h4{
+                text-align: center;
+            }
+        }
+    }
+    .verMas{
+        display: grid;
+        grid-template-columns: 150px 1fr 1fr 1fr;
+        text-align: center;
+        padding: 10px;
+        .boton{
+            transition: 1s ease;
+            grid-column-start: 3;
+            margin:  0px 100px;
+            &:hover{
+                background-color: white;
+                color: #8E4FD5;
+            }
+        }
+    }
+}

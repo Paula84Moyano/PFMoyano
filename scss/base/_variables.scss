@@ -1,0 +1,15 @@
+$boton:(
+    color-texto: white,
+    bg-color: #8E4FD5,
+    padd: 8px 15px,
+    radio: 5px,
+    decoracion: none,
+);
+
+.boton{
+    background-color: map-get($boton, bg-color );
+    color: map-get($boton, color-texto );
+    padding: map-get($boton, padd );
+    border-radius: map-get($boton, radio );
+    text-decoration: map-get($boton, decoracion );
+}

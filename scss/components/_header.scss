@@ -1,0 +1,64 @@
+/*----FONDO----*/
+
+body{
+    background-color: black;
+}
+
+/*----HEADER----*/
+
+header{
+    background-color:#000000c4;
+    position:fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    z-index: 3;
+    a{
+        text-decoration: none;
+        color: white;
+        padding: 0px 10px;
+        h1{
+            color: white;
+            font-family: 'UnifrakturMaguntia', cursive;
+        }
+    }
+    nav{
+        .container-fluid{
+            button{
+                .navbar-toggler-icon{
+                    filter: invert(100%);
+                    background-image: url(../img/menu.png);
+                }
+            }
+        }
+        .collapse .navbar-collapse{
+            ul{
+                list-style: none;
+                display: flex;
+             align-items:center;
+                li{
+                display: inline-block;
+                    a{
+                        padding: 15px;
+                        font-size: 15px;
+                        text-transform: uppercase;
+                        transition: 0.5s ease-in-out;
+                        &:hover{
+                            font-size: 18px;
+                            color: white;
+                        }
+                        img{
+                            filter: invert(100%);
+                            transition: 0.5s ease-in-out;
+                            &:hover{
+                                transform: scale(1.2);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

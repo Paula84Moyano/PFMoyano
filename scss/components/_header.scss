@@ -32,28 +32,28 @@ header{
                     background-image: url(../img/menu.png);
                 }
             }
-        }
-        .collapse .navbar-collapse{
-            ul{
-                list-style: none;
-                display: flex;
-             align-items:center;
-                li{
-                display: inline-block;
-                    a{
-                        padding: 15px;
-                        font-size: 15px;
-                        text-transform: uppercase;
-                        transition: 0.5s ease-in-out;
-                        &:hover{
-                            font-size: 18px;
-                            color: white;
-                        }
-                        img{
-                            filter: invert(100%);
+            .lista{
+                ul{
+                    list-style: none;
+                    display: flex;
+                    align-items:center;
+                    li{
+                    display: inline-block;
+                        a{
+                            padding: 15px;
+                            font-size: 15px;
+                            text-transform: uppercase;
                             transition: 0.5s ease-in-out;
                             &:hover{
-                                transform: scale(1.2);
+                                font-size: 18px;
+                                color: white;
+                            }
+                            img{
+                                filter: invert(100%);
+                                transition: 0.5s ease-in-out;
+                                &:hover{
+                                    transform: scale(1.2);
+                                }
                             }
                         }
                     }

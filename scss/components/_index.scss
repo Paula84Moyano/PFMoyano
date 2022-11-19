@@ -8,12 +8,12 @@
         text-align: center;
         font-size: 40px;
     }
-    div{
+    .divPadre{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         flex-wrap: wrap;
-        div{
+        .divHijo{
             text-align: center;
             padding:50px;
             transition: 1s ease-in-out;
@@ -38,6 +38,9 @@
         }
     }
     .vertodo{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
         .boton{
             transition: 1s ease;
             &:hover{

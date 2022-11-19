@@ -93,12 +93,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Paula84Moyano/PreEntrega2Moyano.git"
+    "url": "git+https://github.com/Paula84Moyano/PFMoyano.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Paula84Moyano/PreEntrega2Moyano/issues"
+    "url": "https://paula84moyano.github.io/PFMoyano/issues"
   },
-  "homepage": "https://github.com/Paula84Moyano/PreEntrega2Moyano#readme"
+  "homepage": "https://paula84moyano.github.io/PFMoyano/#readme"
 }

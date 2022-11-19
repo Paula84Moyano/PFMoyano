@@ -1,14 +1,13 @@
 /*--------MEDIA QUERIE----------*/
 
 
-
 @media screen and (max-width:1115px){
     .categorias{
         display: block;
     }
-    .categoria:hover{
+    .categorias .categoria:hover{
         transform: scale(1);
-}
+    }
     .divTienda{
         grid-template-columns: 150px 1fr 1fr;
         grid-template-areas: "tienda tienda tienda"
@@ -17,15 +16,15 @@
         "categoriasDos producto5 producto6"
         "categoriasDos producto7 producto8";
     }
-    .verMas{
+    .tiendaDos .verMas{
         display: grid;
         grid-template-columns: 150px 1fr;
     }
-    .verMas a{
+    .tiendaDos .verMas .boton{
         grid-column-start: 2;
         margin:  0px 200px;
     }
-    .divTienda img{
+    .tiendaDos .divTienda .producto img{
         width: 230px;
         height: 230px;
     }
@@ -35,15 +34,16 @@
     .nos h2{
         font-size: 35px;
     }
-    .txt img{
+    .conocenos .txt div img{
         width: 350px;
         height: 350px;
     }
-    .nos p{
+    .conocenos .txt .nos p{
         font-size: 28px;
         padding: 20px 30px;
     }
 }
+
 @media screen and (max-width:990px){
     footer{
         display: block;
@@ -51,14 +51,14 @@
     .metodos{
         text-align: center;
     }
-    .iconos{
+    footer .contacto .iconos{
         flex-direction: row;
     }
-    .c0n{
+    footer .contacto a{
         display: block;
         text-align: center;
     }
-    .tienda div{
+    .tienda .divPadre{
         display: block;
     }
     .vertodo{
@@ -73,7 +73,7 @@
         padding: 50px 0px;
         grid-template-rows: 500px 600px 200px 250px;
     }
-    .con{
+    .contact .con{
         padding: 30px;
         align-items: center;
     }
@@ -81,44 +81,45 @@
         width: 64px;
         height: 64px;
     }
-    .social img{
+    .contact .social div a img{
         height: 64px;
         width: 64px;
     }
-    .txt{
+    .conocenos .txt{
         padding: 50px;
     }
-    .txt img{
+    .conocenos .txt div img{
         width: 250px;
         height: 250px;
     }
     .cuenta{
         align-items: center;
     }
-    .cuenta h2{
+    .cuenta div h2{
         font-size: 35px;
     }
 }
+
 @media screen and (max-width:768px){
-    .newsletter input[type="text"]{
+    footer .newsletter form input[type="text"]{
         padding: 8px 2px;
     }
-    .newsletter input[type="submit"]{
+    footer .newsletter form input[type="submit"]{
         padding: 6px 10px;
     }
     .newsletter h3{
         font-size: 20px;
     }
-    .categorias h4{
+    .categorias .categoria h4{
         font-size: 150%;
         padding: 10px 0px;
     }
     .categorias{
         padding: 50px 0px;
     }
-    .tienda div div img{
-        width: 200px;
-        height: 200px;
+    .tienda .divPadre .divHijo img{
+        width: 250px;
+        height: 250px;
     }
     .divTienda{
         grid-template-columns:80px 1fr;
@@ -132,11 +133,11 @@
         "categoriasDos producto7"
         "categoriasDos producto8";
     }
-    .verMas{
+    .tiendaDos .verMas{
         display: grid;
         grid-template-columns: 80px 1fr;
     }
-    .verMas a{
+    .tiendaDos .verMas .boton{
         margin:  0px 100px;
     }
     .titulo h2{
@@ -148,26 +149,34 @@
     .txt img{
         display: none;
     }
-    .cuenta h2{
+    .cuenta div h2{
         font-size: 30px;
     }
-    .cuenta p{
+    .cuenta div form .p1{
         padding: 0px;
         text-align: center;
     }
-    .cuenta input[type="text"]{
+    .cuenta div form .p2{
+        padding: 0px;
+        text-align: center;
+    }
+    .cuenta div form .p3{
+        padding: 0px;
+        text-align: center;
+    }
+    .cuenta div form .p1 input[type="text"]{
         width: 400px;
         padding: 2px;
     }
-    .cuenta input[type="password"]{
+    .cuenta div form .p2 input[type="password"]{
         width: 400px;
         padding: 2px;
     }
-    .cuenta input[type="submit"]{
+    .cuenta div form .p3 input[type="submit"]{
         width: 400px;
         padding: 2px;
     }
-    .contr{
+    .cuenta div form .reg .contr {
         padding: 10px;
     }
     .regis{
@@ -176,13 +185,13 @@
 }
 
 @media screen and (max-width:500px){
-    .newsletter input[type="text"]{
+    footer .newsletter form input[type="text"]{
         padding: 6px 2px;
     }
-    .newsletter input[type="submit"]{
+    footer .newsletter form input[type="submit"]{
         padding: 4px 10px;
     }
-    .categorias h4{
+    .categorias .categoria h4{
         font-size: 80%;
     }
     .categoria p{
@@ -191,14 +200,14 @@
     .categorias{
         padding: 20px 0px;
     }
-    .tienda div div img{
+    .tienda .divPadre .divHijo img{
         width: 200px;
         height: 200px;
     }
     .tienda h2{
         font-size: 25px;
     }
-    .divTienda img{
+    .tiendaDos .divTienda .producto img{
         width: 200px;
         height: 200px;
     }
@@ -208,20 +217,17 @@
     .categoriasDos a{
         font-size: 15px;
     }
-    .verMas a{
+    .tiendaDos .verMas .boton{
         margin:  0px 80px;
     }
     .direccion iframe{
         height: 80%;
         width: 80%;    
     }
-    .contact h2{
-        font-size: 35px;
-    }
-    .direccion h3{
+    .contact .direccion h3{
         font-size: 15px;
     }
-    .consulta form{
+    .contact .consulta form{
         width: 300px;
     }
     .consulta form p textarea{
@@ -234,33 +240,30 @@
         width: 48px;
         height: 48px;
     }
-    .social img{
+    .contact .social div a img{
         width: 48px;
         height: 48px;
     }
     .social h3{
         font-size: 20px;
     }
-    .nos p{
+    .conocenos .txt .nos p{
         font-size: 25px;
         padding: 20px 10px;
     }
-    .cuenta input[type="text"]{
+    .cuenta div form .p1 input[type="text"]{
         width: 300px;
         padding: 2px;
     }
-    .cuenta input[type="password"]{
+    .cuenta div form .p2 input[type="password"]{
         width: 300px;
         padding: 2px;
     }
-    .cuenta input[type="submit"]{
+    .cuenta div form .p3 input[type="submit"]{
         width: 300px;
         padding: 2px;
     }
-    .contr{
-        padding: 10px;
-    }
-    .regis{
+    .cuenta div form .reg .regis{
         font-size: 10px;
         padding: 5px 15px;
     }

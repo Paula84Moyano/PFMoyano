@@ -45,6 +45,7 @@
         padding: 50px 0px;
         .titulo{
             display: flex;
+            padding: 0px 50px 50px 50px;
             div{
                 h2{
                     text-align:start;
@@ -56,7 +57,7 @@
                         text-decoration: none;
                         color: white;
                         transition: 1s ease;
-                        &a:hover{
+                        &:hover{
                             text-decoration: underline;
                         }
                     }
@@ -99,6 +100,7 @@
             }
             h4{
                 text-align: center;
+                color: #54E0C2;
             }
         }
     }
